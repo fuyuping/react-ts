@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //引入页面
-import SetData from "../setData";
-import GetData from "../getData";
+import Test from "../page/test";
 
 export default class App extends Component {
   render() {
@@ -10,8 +9,7 @@ export default class App extends Component {
       <Router>
         <div>
           <Routes>
-            <Route path="/set" element={<SetData />} />
-            <Route path="/get" element={<GetData />} />
+            <Route path="/test" element={<Test />} />
           </Routes>
         </div>
       </Router>
